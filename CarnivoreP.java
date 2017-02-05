@@ -3,7 +3,7 @@ public class CarnivoreP extends Consommateur{
 	private Herbivore AlimentP;
 	private Herbivore AlimentS;
 	public CarnivoreP(String nom, Temps nourrire, Temps evoluer, Temps reproduire, int survie, String environnement, String etat, Herbivore AlimentP, Herbivore AlimentS ) {
-		super.Consommateur(String nom, Temps nourrire, Temps evoluer, Temps reproduire, int survie, String environnement, String etat);
+		super( nom,  nourrire,  evoluer,  reproduire,  survie,  environnement,  etat);
 		this.AlimentP=AlimentP;
 		this.AlimentS=AlimentS;
  }
