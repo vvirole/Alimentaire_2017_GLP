@@ -1,13 +1,13 @@
 
 public abstract class Consommateur {
 	protected String Nom;
-	protected Temps Nourrire;
-	protected Temps Evoluer;
-	protected Temps Reproduire;
+	protected int Nourrire;
+	protected int Evoluer;
+	protected int Reproduire;
 	protected int Survie;
 	protected String Environnement;
 	protected String Etat;
-	public Consommateur(String nom, Temps nourrire, Temps evoluer, Temps reproduire, int survie, String environnement, String etat) {
+	public Consommateur(String nom, int nourrire, int evoluer, int reproduire, int survie, String environnement, String etat) {
 		super();
 		Nom = nom;
 		Nourrire = nourrire;
@@ -23,22 +23,22 @@ public abstract class Consommateur {
 	public void setNom(String nom) {
 		Nom = nom;
 	}
-	public Temps getNourrire() {
+	public int getNourrire() {
 		return Nourrire;
 	}
-	public void setNourrire(Temps nourrire) {
+	public void setNourrire(int nourrire) {
 		Nourrire = nourrire;
 	}
-	public Temps getEvoluer() {
+	public int getEvoluer() {
 		return Evoluer;
 	}
-	public void setEvoluer(Temps evoluer) {
+	public void setEvoluer(int evoluer) {
 		Evoluer = evoluer;
 	}
-	public Temps getReproduire() {
+	public int getReproduire() {
 		return Reproduire;
 	}
-	public void setReproduire(Temps reproduire) {
+	public void setReproduire(int reproduire) {
 		Reproduire = reproduire;
 	}
 	public int getSurvie() {

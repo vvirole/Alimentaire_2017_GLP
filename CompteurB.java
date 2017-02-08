@@ -1,3 +1,4 @@
+package chronometre;
 
 public class CompteurB extends Compteur{
 	private int Max;
@@ -10,13 +11,20 @@ public class CompteurB extends Compteur{
 	public int getMax() {
 		return Max;
 	}
-	public void setMax(int max) {
-		Max = max;
-	}
 	public int getMin() {
 		return Min;
 	}
-	public void setMin(int min) {
-		Min = min;
+
+	public void decrement() {
+		if (getValeur() > Min) {
+			super.decrement();
+		}
 	}
+
+
+	public void increment() {
+		if (getValeur() < Max) {
+			super.increment();
+		}
+	
 }
