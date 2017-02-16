@@ -1,4 +1,4 @@
-package chronometre;
+
 
 public class CompteurB extends Compteur{
 	private int Max;
@@ -27,4 +27,6 @@ public class CompteurB extends Compteur{
 			super.increment();
 		}
 	
+
+	}
 }

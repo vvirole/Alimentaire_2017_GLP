@@ -1,4 +1,20 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
 
 public class ConsommateurManageur {
-
+	private static HashMap <String, CompteurB >  HashConsommateur  = new HashMap<String, CompteurB> ( 40 ) ;
+	private String NomBiome;
+	public ConsommateurManageur(String nomBiome) {
+		super();
+		NomBiome = nomBiome;
+	}
+	public void creatHashConso() throws IOException{
+	BufferedReader fichier = new BufferedReader(new FileReader("ListeConsommateur.txt"));
+		while(fichier.readLine()!= null){
+			HashConsommateur.put(fichier.readLine(), new CompteurB(600, 0));
+		}
+	fichier.close();
+	}
 }

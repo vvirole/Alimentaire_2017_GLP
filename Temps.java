@@ -1,8 +1,8 @@
 
 public class Temps {
-	private CyclicCounter hour = new CyclicCounter(0, 23, 0);
-	private CyclicCounter minute = new CyclicCounter(0, 59, 0);
-	private CyclicCounter second = new CyclicCounter(0, 59, 0);
+	private CompteurCycl hour = new CompteurCycl(23, 0);
+	private CompteurCycl minute = new CompteurCycl(59, 0);
+	private CompteurCycl second = new CompteurCycl(59, 0);
 	private int Tour=0;
 	public Temps(int tour) {
 		Tour = tour;
@@ -12,11 +12,11 @@ public class Temps {
 	}
 	public void increment() {
 		second.increment();
-		if (second.getValue() == 0) {
+		if (second.getValeur() == 0) {
 			minute.increment();
-			if (minute.getValue() == 0) {
+			if (minute.getValeur() == 0) {
 				hour.increment();
-				if(hour.getValue()==0)	{
+				if(hour.getValeur()==0)	{
 					++Tour;
 				}
 			}
@@ -26,26 +26,26 @@ public class Temps {
 
 	public void decrement() {
 		second.decrement();
-		if (second.getValue() == 59) {
+		if (second.getValeur() == 59) {
 			minute.decrement();
-			if (minute.getValue() == 59) {
+			if (minute.getValeur() == 59) {
 				hour.decrement();
-				if(hour.getValue() == 59) {
+				if(hour.getValeur() == 59) {
 					--Tour;
 				}
 			}
 		}
 	}
 
-	public CyclicCounter getHour() {
+	public CompteurCycl getHour() {
 		return hour;
 	}
 
-	public CyclicCounter getMinute() {
+	public CompteurCycl getMinute() {
 		return minute;
 	}
 
-	public CyclicCounter getSecond() {
+	public CompteurCycl getSecond() {
 		return second;
 	}
 
@@ -64,8 +64,8 @@ public class Temps {
 	}
 
 	public void init() {
-		hour.setValue(0);
-		minute.setValue(0);
-		second.setValue(0);
+		hour.setValeur(0);
+		minute.setValeur(0);
+		second.setValeur(0);
 	}
 }

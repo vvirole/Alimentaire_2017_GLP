@@ -1,4 +1,3 @@
-package chronometre;
 
 public class Compteur {
 	private int valeur;
@@ -15,10 +14,10 @@ public class Compteur {
 		valeur=0;
 	}
 	public void increment() {
-		value++;
+		valeur++;
 	}
 
 	public void decrement() {
-		value--;
+		valeur--;
 	}
 }

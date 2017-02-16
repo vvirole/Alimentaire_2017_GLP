@@ -1,21 +1,21 @@
 public class CarnivoreS extends Consommateur{
-	private CarnivoreP AlimentP;
-	private CarnivoreP AlimentS;
-	public CarnivoreS(String nom, Temps nourrire, Temps evoluer, Temps reproduire, int survie, String environnement, String etat, CarnivoreP AlimentP, CarnivoreP AlimentS ) {
+	private String AlimentP;
+	private String AlimentS;
+	public CarnivoreS(String nom, int nourrire, int evoluer, int reproduire, int survie, String environnement, String etat, String AlimentP, String AlimentS ) {
 		super( nom,  nourrire,  evoluer,  reproduire,  survie,  environnement,  etat);
 		this.AlimentP=AlimentP;
 		this.AlimentS=AlimentS;
 	}
-	public CarnivoreP getAlimentP() {
+	public String getAlimentP() {
 		return AlimentP;
 	}
-	public void setAlimentP(CarnivoreP alimentP) {
+	public void setAlimentP(String alimentP) {
 		AlimentP = alimentP;
 	}
-	public CarnivoreP getAlimentS() {
+	public String getAlimentS() {
 		return AlimentS;
 	}
-	public void setAlimentS(CarnivoreP alimentS) {
+	public void setAlimentS(String alimentS) {
 		AlimentS = alimentS;
 	}
 

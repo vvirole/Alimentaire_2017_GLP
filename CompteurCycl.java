@@ -1,4 +1,4 @@
-package chronometre;
+
 
 public class CompteurCycl extends CompteurB {
 
@@ -24,6 +24,6 @@ public class CompteurCycl extends CompteurB {
 	}
 
 	public String toString() {
-		return Chrono.transform(getValeur());
+		return Temps.transform(getValeur());
 	}
 }

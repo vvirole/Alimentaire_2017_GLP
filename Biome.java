@@ -1,8 +1,11 @@
+import java.util.HashMap;
+
+
 public class Biome {
 	private String Nom;
 	private Temps Horloge;
-	private RessourceProd ressourceProducteur;
-	private RessourceDecomp ressourceDecompose;
+	private static HashMap <String, CompteurB >  ressourceProducteur  = new HashMap<String, CompteurB> ( 300 ) ;
+	private static HashMap <String, CompteurB > ressourceDecompose  = new HashMap<String, CompteurB> ( 300 )  ;
 	private String Environnement;
 	private CarnivoreP CarnivorePrimaire;
 	private CarnivoreS CarnivoreSecondaire;
@@ -12,8 +15,7 @@ public class Biome {
 	private ConsommateurManageur ConsommateurBiome;
 	private DecomposeurManageur DecomposeurBiome;
 	private ProducteurManageur ProducteurBiome;
-	public Biome(String nom, Temps horloge, RessourceProd ressourceProducteur,
-			RessourceDecomp ressourceDecompose, String environnement,
+	public Biome(String nom, Temps horloge, String environnement,
 			CarnivoreP carnivorePrimaire, CarnivoreS carnivoreSecondaire,
 			Herbivore herbi, Decomposeur degradeur, Producteur vegetation,
 			ConsommateurManageur consommateurBiome,
@@ -22,8 +24,6 @@ public class Biome {
 		super();
 		Nom = nom;
 		Horloge = horloge;
-		this.ressourceProducteur = ressourceProducteur;
-		this.ressourceDecompose = ressourceDecompose;
 		Environnement = environnement;
 		CarnivorePrimaire = carnivorePrimaire;
 		CarnivoreSecondaire = carnivoreSecondaire;
@@ -45,18 +45,6 @@ public class Biome {
 	}
 	public void setHorloge(Temps horloge) {
 		Horloge = horloge;
-	}
-	public RessourceProd getRessourceProducteur() {
-		return ressourceProducteur;
-	}
-	public void setRessourceProducteur(RessourceProd ressourceProducteur) {
-		this.ressourceProducteur = ressourceProducteur;
-	}
-	public RessourceDecomp getRessourceDecompose() {
-		return ressourceDecompose;
-	}
-	public void setRessourceDecompose(RessourceDecomp ressourceDecompose) {
-		this.ressourceDecompose = ressourceDecompose;
 	}
 	public String getEnvironnement() {
 		return Environnement;
@@ -112,8 +100,8 @@ public class Biome {
 	public void setProducteurBiome(ProducteurManageur producteurBiome) {
 		ProducteurBiome = producteurBiome;
 	}
-	
-	
-	
+
+
+
 
 }
