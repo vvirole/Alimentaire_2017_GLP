@@ -1,24 +1,24 @@
 
 public class Producteur {
-	private Temps Produire;
-	private Temps ConsommeProd;
+	private int Produire;
+	private int ConsommeProd;
 	private String Nom;
-	public Producteur(Temps produire, Temps consommeProd, String nom) {
+	public Producteur(int produire, int consommeProd, String nom) {
 		super();
 		Produire = produire;
 		ConsommeProd = consommeProd;
 		Nom = nom;
 	}
-	public Temps getProduire() {
+	public int getProduire() {
 		return Produire;
 	}
-	public void setProduire(Temps produire) {
+	public void setProduire(int produire) {
 		Produire = produire;
 	}
-	public Temps getConsommeProd() {
+	public int getConsommeProd() {
 		return ConsommeProd;
 	}
-	public void setConsommeProd(Temps consommeProd) {
+	public void setConsommeProd(int consommeProd) {
 		ConsommeProd = consommeProd;
 	}
 	public String getNom() {

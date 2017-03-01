@@ -11,7 +11,7 @@ public class ConsommateurManageur {
 		NomBiome = nomBiome;
 	}
 	public void creatHashConso() throws IOException{
-	BufferedReader fichier = new BufferedReader(new FileReader("ListeConsommateur.txt"));
+	BufferedReader fichier = new BufferedReader(new FileReader("ListeConsommateur"+NomBiome+".txt"));
 		while(fichier.readLine()!= null){
 			HashConsommateur.put(fichier.readLine(), new CompteurB(600, 0));
 		}

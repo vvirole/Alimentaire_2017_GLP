@@ -100,7 +100,9 @@ public class Biome {
 	public void setProducteurBiome(ProducteurManageur producteurBiome) {
 		ProducteurBiome = producteurBiome;
 	}
-
+	//public String toString(){
+		//return 
+	//}
 
 
 
