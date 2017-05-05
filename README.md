@@ -1,8 +1,12 @@
 # Alimentaire_2017_GLP
-VIROLE DONGARD GOBIN
+VIROLE GOBIN
 
-Derniere MAJ ALIMENTAIRE V1 sous le nom de GLP_PROJET.rar le 28/03/17
+Derniere MAJ ALIMENTAIRE V2 sous le nom de AlimentaireMoteur.rar le 05/05/17
 
-Tâches à accomplir : 
--Création du catalogue des espèces [ 1ère étape : Consommateur et Producteur ].
--Mise en place d'équations mathématiques pour l'évolution des espéces.
+Moteur Réalisé par VVIROLE
+ce moteur permet de généré une grille aléatoire qui prend en compte les cases où des biomes peuvent se rencontrer
+ainsi il y a les interactions entre ces biomes
+de plus les cas aléatoires tel que la maladie ou la "crue" ont été implémenter.
+Une mise à jour de la base de donnée a aussi été effectuée.
+
+Vincent VIROLE
